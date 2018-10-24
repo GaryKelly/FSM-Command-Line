@@ -1,9 +1,8 @@
-#include <iostream>
-#include <thread>
-#include <chrono>
 
 
 
+
+class State;
 
 class Animation
 {
@@ -17,3 +16,8 @@ public:
 	void climbing();
 
 };
+
+#include "State.h"
+#include "jumping.h"
+#include "Climbing.h"
+#include "Idle.h"

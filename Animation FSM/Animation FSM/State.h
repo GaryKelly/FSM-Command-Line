@@ -1,6 +1,7 @@
-#include "Animation.h"
 
+#include <iostream>
 
+class Animation;
 class State
 {
 public:
@@ -8,3 +9,5 @@ public:
 	virtual void jumping(Animation *a) { std::cout << "State::Jumping\n"; };
 	virtual void climbing(Animation *a) { std::cout << "State::Climbing\n"; };
 };
+
+#include "Animation.h" 
