@@ -1,31 +1,47 @@
 ﻿  Animation.cpp
-c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\animation.h(8): error C2011: 'Animation': 'class' type redefinition
-  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\state.h(4): note: see declaration of 'Animation'
-c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\state.h(6): error C2011: 'State': 'class' type redefinition
-  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\animation.h(5): note: see declaration of 'State'
-c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\state.h(13): fatal error C1014: too many include files: depth = 1024
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\idle.h(4): error C2011: 'Idle': 'class' type redefinition
+  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\animation.h(5): note: see declaration of 'Idle'
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\animation.cpp(5): error C2027: use of undefined type 'Idle'
+  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\animation.h(5): note: see declaration of 'Idle'
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\animation.cpp(10): error C2039: 'Idle': is not a member of 'State'
+  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\idle.h(1): note: see declaration of 'State'
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\animation.cpp(15): error C2039: 'Jumping': is not a member of 'State'
+  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\idle.h(1): note: see declaration of 'State'
   Climbing.cpp
-c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\state.h(6): error C2011: 'State': 'class' type redefinition
-  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\animation.h(5): note: see declaration of 'State'
-c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\animation.h(8): error C2011: 'Animation': 'class' type redefinition
-  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\state.h(4): note: see declaration of 'Animation'
-c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\state.h(13): fatal error C1014: too many include files: depth = 1024
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\climbing.h(3): error C2504: 'State': base class undefined
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\climbing.h(7): error C2535: 'Climbing::Climbing(void)': member function already defined or declared
+  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\climbing.h(6): note: see declaration of 'Climbing::Climbing'
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\climbing.h(8): error C2061: syntax error: identifier 'Animation'
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\idle.h(4): error C2011: 'Idle': 'class' type redefinition
+  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\animation.h(5): note: see declaration of 'Idle'
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\climbing.cpp(5): error C2511: 'void Climbing::idle(Animation *)': overloaded member function not found in 'Climbing'
+  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\climbing.h(2): note: see declaration of 'Climbing'
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\climbing.cpp(7): error C2027: use of undefined type 'Idle'
+  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\idle.h(4): note: see declaration of 'Idle'
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\climbing.cpp(8): error C2671: 'Climbing::idle': static member functions do not have 'this' pointers
   Idle.cpp
-c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\state.h(6): error C2011: 'State': 'class' type redefinition
-  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\animation.h(5): note: see declaration of 'State'
-c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\animation.h(8): error C2011: 'Animation': 'class' type redefinition
-  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\state.h(4): note: see declaration of 'Animation'
-c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\state.h(13): fatal error C1014: too many include files: depth = 1024
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\idle.h(5): error C2504: 'State': base class undefined
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\animation.h(5): error C2011: 'Idle': 'class' type redefinition
+  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\state.h(6): note: see declaration of 'Idle'
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\idle.cpp(3): error C2027: use of undefined type 'Idle'
+  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\idle.h(4): note: see declaration of 'Idle'
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\idle.cpp(6): error C2027: use of undefined type 'Idle'
+  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\idle.h(4): note: see declaration of 'Idle'
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\idle.cpp(7): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\idle.cpp(10): error C2027: use of undefined type 'Idle'
+  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\idle.h(4): note: see declaration of 'Idle'
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\idle.cpp(13): error C2027: use of undefined type 'Idle'
+  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\idle.h(4): note: see declaration of 'Idle'
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\idle.cpp(14): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
   Jumping.cpp
-c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\state.h(6): error C2011: 'State': 'class' type redefinition
-  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\animation.h(5): note: see declaration of 'State'
-c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\animation.h(8): error C2011: 'Animation': 'class' type redefinition
-  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\state.h(4): note: see declaration of 'Animation'
-c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\state.h(13): fatal error C1014: too many include files: depth = 1024
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\jumping.h(5): error C2504: 'State': base class undefined
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\jumping.h(9): error C2535: 'Jumping::Jumping(void)': member function already defined or declared
+  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\jumping.h(8): note: see declaration of 'Jumping::Jumping'
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\idle.h(4): error C2011: 'Idle': 'class' type redefinition
+  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\animation.h(5): note: see declaration of 'Idle'
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\jumping.cpp(6): error C2027: use of undefined type 'Idle'
+  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\animation.h(5): note: see declaration of 'Idle'
   main.cpp
-c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\state.h(6): error C2011: 'State': 'class' type redefinition
-  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\animation.h(5): note: see declaration of 'State'
-c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\animation.h(8): error C2011: 'Animation': 'class' type redefinition
-  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\state.h(4): note: see declaration of 'Animation'
-c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\animation.h(20): fatal error C1014: too many include files: depth = 1024
+c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\idle.h(4): error C2011: 'Idle': 'class' type redefinition
+  c:\users\c00207281\desktop\fsm-command-line\animation fsm\animation fsm\animation.h(5): note: see declaration of 'Idle'
   Generating Code...

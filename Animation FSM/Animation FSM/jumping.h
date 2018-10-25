@@ -1,11 +1,16 @@
+#ifndef JUMPING_H
+#define JUMPING_H
 #include "State.h"
-#include "Idle.h"
+
 
 class Jumping : public State
 {
 
 public:
 	Jumping() {};
-	Jumping() {};
+	~Jumping() {};
 	void idle(Animation *a);
 };
+
+#include "Animation.h"
+#endif // !JUMPING_H

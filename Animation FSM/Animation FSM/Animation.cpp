@@ -7,12 +7,12 @@ Animation::Animation()
 
 void Animation::idle()
 {
-	current->Idle(this);
+	current->idle(this);
 }
 
 void Animation::jumping()
 {
-	current->Jumping(this);
+	current->jumping(this);
 }
 
 void Animation::climbing()

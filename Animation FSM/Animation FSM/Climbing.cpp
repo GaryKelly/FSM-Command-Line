@@ -1,5 +1,4 @@
 #include "Climbing.h"
-
  
 
 void Climbing::idle(Animation * a)
